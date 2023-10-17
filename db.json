@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "id":1,
+      "title":"Calabrese Broccoli",
+      "image":"utils/broccoli.png",
+      "price":13,
+      "category":"Vegetable",
+      "description":"Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+    },
+    {
+      "id":2,
+      "title":"Fresh Banana Fruites",
+      "image":"utils/banan.png",
+      "price":14,
+      "category":"Fresh",
+      "description":"Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+    },
+    {
+      "id":3,
+      "title":"Vegan Red Tomato",
+      "image":"utils/tomato.png",
+      "price":17,
+      "category":"Vegetable",
+      "description":"Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+    }, {
+      "id":4,
+      "title":"White Nuts",
+      "image":"utils/Pistachios.png",
+      "price":15,
+      "category":"Millets",
+      "description":"Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+    }
+  ]
+}
