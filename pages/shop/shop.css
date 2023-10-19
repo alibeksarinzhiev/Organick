@@ -67,3 +67,20 @@
     background: #DEDDDD;
     top: -20px;
 }
+.shop__category{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 20px 0;
+}
+.shop__category li{
+    font-size: 20px;
+    padding: 7px 15px;
+    background: #68A47F;
+    color: white;
+    border-radius: 8px;
+}
+.shop__category li:hover{
+    cursor: pointer;
+    background: red;
+}

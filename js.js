@@ -1,10 +1,32 @@
 let cards = document.querySelector('.products__cards')
+let showBtn = document.querySelector('.products__btnbox button')
+
+
+let count = 8
+showBtn.addEventListener('click',()=>{
+if (count === 8){
+    count = 1000
+    showBtn.textContent='Скрыть'
+    getproducts()
+}else if (count ===1000){
+    count=8
+
+    getproducts()
+}
+
+})
 
 let getproducts = ()=>{
+    cards.innerHTML = ''
     fetch('http://localhost:3000/products')
         .then((res)=>res.json())
         .then((json)=>{
-            json.forEach((el)=>{
+            json.filter((el,idx)=>{
+                if (idx<count){
+                    return el
+                }
+            })
+                .forEach((el)=>{
                 cards.innerHTML+=`
                 <div class="card">
             <button>${el.category}</button>
