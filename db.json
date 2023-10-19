@@ -6,7 +6,7 @@
       "image":"utils/broccoli.png",
       "price":13,
       "category":"Vegetable",
-      "description":"Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+      "description":"Broccoli, or Brassica cabbage (Brassica oleracea var. italica, or Brassica oleracea Broccoli Group), is an annual vegetable plant of the Brassica family, a variety of cabbage. Closest relative and genetic predecessor of cauliflower"
     },
     {
       "id":2,
@@ -14,7 +14,7 @@
       "image":"utils/banan.png",
       "price":14,
       "category":"Fresh",
-      "description":"Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+      "description":"Bananas are one of the oldest food crops, and for tropical countries the most important food plant and main export item. Ripe bananas are widely eaten throughout the world and are used in a wide variety of dishes."
     },
     {
       "id":3,
@@ -22,14 +22,71 @@
       "image":"utils/tomato.png",
       "price":17,
       "category":"Vegetable",
-      "description":"Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+      "description":"SThe tomato is the edible berry of the plant Solanum Lycopersicum, commonly known as a tomato plant. The species originated in western South America and Central America."
     }, {
       "id":4,
       "title":"White Nuts",
       "image":"utils/Pistachios.png",
       "price":15,
       "category":"Millets",
-      "description":"Simply dummy text of the printing and typesetting industry. Lorem had ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."
+      "description":"The pistachio nut is a dry fruit of small size, lengthy with a hard, thin, and clear brown shell. The edible part is green-yellowish and tender. They are used in foodstuff products and also in cosmetics."
+    }, {
+      "id":5,
+      "title":"Mung Bean",
+      "image":"utils/MungBeam.png",
+      "price":11,
+      "category":"Health",
+      "description":"Mung bean, or Vigna radiata (lat. Vigna radiata, syn. Phaseolus aureus, Phaseolus radiatus), is an annual herbaceous plant; species of the genus Vigna of the Legume family; a pulse crop originating from India. The seeds are small, green, oval in shape, and are actively used in Asian cuisine in whole, shelled and sprouted form, as well as to obtain starch, from which so-called glass noodles are prepared."
+    }, {
+      "id":6,
+      "title":"Brown Hazelnut",
+      "image":"utils/Hazelnut.png",
+      "price":12,
+      "category":"Nuts",
+      "description":"Hazelnut is the nut of any of 20 species of shrubs (less commonly trees) of the genus Corylus of the Birch family Betulaceae, including common hazel (Corylus avellana) and large hazel (Corylus maxima). Nuts of large-fruited forms of hazel, mainly common hazel, large hazel and Pontian hazel, are called hazelnuts"
+    }, {
+      "id":7,
+      "title":"Eggs",
+      "image":"utils/Eggs.png",
+      "price":17,
+      "category":"Fresh",
+      "description":"Egg is a common food product. Due to their availability, chicken eggs are currently the most widely used, although any bird eggs can be eaten by humans. In addition, there is the practice of eating the eggs of some reptiles."
+    }, {
+      "id":8,
+      "title":"Wheat rye lean bread",
+      "image":"utils/WheatBread.png",
+      "price":15,
+      "category":"Fresh",
+      "description":"Rye bread (black bread) - bread made from rye flour (wallpaper, peeled or sifted). Distributed in the North and central Russia, Belarus, Latvia, Lithuania, Germany, Finland, Norway, Sweden, Denmark, Poland, Ukraine, France, Czech Republic."
+    }, {
+      "id":9,
+      "title":"Zucchini",
+      "image":"utils/Zucchini.png",
+      "price":11,
+      "category":"Fresh",
+      "description":"Zucchini is a common variety of zucchini native to Italy. It is a green-fruited zucchini with a high content of vitamin C. The leaves are heavily cut, often with a silvery pattern. Plant type: annual. Growing conditions: open ground,  greenhouse."
+    }, {
+      "id":10,
+      "title":"White Hazelnut",
+      "image":"utils/WhiteHazelnut.png",
+      "price":12,
+      "category":"Nuts",
+      "description":"Hazelnut is the nut of any of 20 species of shrubs of the Hazel genus of the Birch family, including common hazel and large hazel. The nuts of large-fruited forms of hazel, mainly common hazel, large hazel and Pontian hazel, are called hazelnuts."
+    }
+  , {
+      "id":11,
+      "title":"Fresh Corn",
+      "image":"utils/Corn.png",
+      "price":17,
+      "category":"Fresh",
+      "description":"Corn is a tall herbaceous plant. Its fruits, grainy cobs, are prized in cooking. Cultivation is carried out on an industrial scale."
+    }, {
+      "id":12,
+      "title":"Organic Almonds",
+      "image":"utils/OrganicAlmonds.png",
+      "price":15,
+      "category":"Fresh",
+      "description":"Organic almond (Prunus dulcis), mainly grown in the Mediterranean region, USA, Australia and China, but originating from the Middle East region (Iran, Saudi Arabia, etc.), where it still grows naturally."
     }
   ]
 }

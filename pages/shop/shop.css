@@ -1,0 +1,69 @@
+.banner_shop{
+    height: 430px;
+    background: url("./images/shop-banner-bg.jpg")center/cover no-repeat;
+}
+.banner_shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner_shop h2{
+    color: #274C5B;
+    font-family: Roboto, sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.products__shop__card{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    padding: 70px 0;
+}
+
+
+.products__cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    margin-top: 30px;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 290px;
+    height: 400px;
+    padding: 25px 30px 13px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 13px 0 rgba(34, 60, 80, 0.2);
+
+}
+.card img{
+    width: 100%;
+    height: 190px;
+}
+.card button{
+    padding: 5px 12px;
+    border-radius: 8px;
+    background: #274C5B;
+    display: inline;
+    color: white;
+    border: none;
+}
+.card__bottom{
+    position: relative;
+    width: 100%;
+}
+.card__bottom:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #DEDDDD;
+    top: -20px;
+}
