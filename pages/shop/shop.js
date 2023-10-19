@@ -8,7 +8,7 @@ let getProductsShop = ()=>{
                 cardShop.innerHTML+=`
                 <div class="card">
             <button>${el.category}</button>
-            <img src="${el.imagegi}" alt="">
+            <img src="../../${el.image}" alt="">
             <h2>${el.title}</h2>
             <div class="card__bottom">
             <p><span>$20.00</span> $ ${el.price}.00</p>
