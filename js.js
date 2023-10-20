@@ -33,7 +33,7 @@ let getproducts = ()=>{
             <img src="${el.image}" alt="">
             <h2>${el.title}</h2>
             <div class="card__bottom">
-            <p><span>$20.00</span> $ ${el.price}.00</p>
+            <p><span class="old__price"><s>$20.00</s></span> $${el.price}.00 USD</p>
             
             </div>
             </div>
