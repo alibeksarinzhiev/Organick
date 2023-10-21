@@ -10,7 +10,6 @@ if (count === 8){
     getproducts()
 }else if (count ===1000){
     count=8
-
     getproducts()
 }
 
