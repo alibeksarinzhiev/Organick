@@ -29,7 +29,10 @@ let getproducts = ()=>{
                 cards.innerHTML+=`
                 <div class="card">
             <button>${el.category}</button>
-            <img src="${el.image}" alt="">
+<a href="pages/single/single.html#${el.id}">
+  <img src="${el.image}" alt="">
+</a>
+          
             <h2>${el.title}</h2>
             <div class="card__bottom">
             <p><span class="old__price"><s>$20.00</s></span> $${el.price}.00 USD</p>
