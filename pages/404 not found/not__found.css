@@ -1,0 +1,43 @@
+.not__found{
+    background: url("image/error-background.jpg")center/cover no-repeat;
+}
+.content__not_found{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+}
+.text__not_found h1{
+    text-align: center;
+    color: #274C5B;
+    font-family: Roboto,sans-serif;
+    font-size: 72px;
+    font-weight: 800;
+}
+.text__not_found p{
+    color: #525C60;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 165.4%; /* 29.772px */
+}
+.button__not_found button {
+    margin-top: 30px;
+    display: flex;
+    padding: 28px 49px 28px 46px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 16px;
+    background: #274C5B;
+    color: #FFF;
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.button__not_found a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
