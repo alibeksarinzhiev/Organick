@@ -48,18 +48,11 @@ let getproducts = () => {
             <button data-id=${el.id} class="addcart">Купить</button>
             </div>
                 `
-
                 })
-            let addbtncart = document.querySelectorAll('.addcart')
-            Array.from(addbtncart).forEach((item) => {
-                item.addEventListener('click', () => {
-                    cart = [...cart, json.find((one) => {
-                        return one.id === +item.dataset.id
-                    })]
-                    cartTov.innerHTML = ''
-
-                    cart.forEach((el) => {
-                        cartTov.innerHTML += `
+            let cartfunc = ()=>{
+                cartTov.innerHTML = ''
+                cart.forEach((el) => {
+                    cartTov.innerHTML += `
                            <div class="content__cart">
                                 <div class="bay__cart">
                                     <img src="${el.image}" alt="Name product">
@@ -69,20 +62,46 @@ let getproducts = () => {
                                 <div class="text__cart__products">
                                     <h2>${el.title}</h2>
                                     <h3>${el.description}</h3>
+                                    <button data-id=${el.id} class="deleteone">удалить</button>
+                                    <div class="bay__cart-count">
+                                    <button>-</button>
+                                    <p>1</p>
+                                    <button>+</button>
+</div>
                                 </div>
                            </div>
                            `
+                })
+                let alldelete = document.querySelectorAll('.deleteone')
+                console.log(alldelete)
+                Array.from(alldelete).forEach((item)=>{
+                    item.addEventListener('click',()=>{
+                        cart = cart.filter((one)=>{
+                            console.log(cart)
+                            return one.id !==+item.dataset.id
+                        })
+                        cartfunc()
                     })
-                    console.log(cart)
+                })
 
+            }
+            let addbtncart = document.querySelectorAll('.addcart')
+            Array.from(addbtncart).forEach((item) => {
+                item.addEventListener('click', () => {
+                    cart = [...cart, json.find((one) => {
+                        return one.id === +item.dataset.id
+                    })]
+                    cartfunc()
                 })
             })
-
         })
 }
 getproducts()
 btncart.addEventListener('click', () => {
     cartshow.classList.toggle('active')
+    if (cart.length===0){
+        cartTov.append('ваша корзина пуста')
+    }
 })
 closecart.addEventListener('click', () => {
     cartshow.classList.toggle('active')

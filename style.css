@@ -320,11 +320,13 @@ padding: 5px 12px;
 }
 .cartshow{
     display: none;
-    position: absolute;
+    position: fixed;
     width: 50%;
     right: 0;
     background: #80808050;
+    height: 100vh;
     top: 0;
+    overflow: scroll;
 }
 .cartshow.active{
     display: flex;
