@@ -9,6 +9,8 @@ let btncart = document.querySelector('.cart')
 let cartshow = document.querySelector('.cartshow')
 let closecart = document.querySelector('.image__exit img')
 let cartTov = document.querySelector('.cart__tov')
+let countcart = document.querySelector('.countcart')
+console.log(countcart)
 
 let count = 8
 showBtn.addEventListener('click', () => {
@@ -80,10 +82,10 @@ let getproducts = () => {
                             console.log(cart)
                             return one.id !==+item.dataset.id
                         })
+                        countcart.textContent = cart.length
                         cartfunc()
                     })
                 })
-
             }
             let addbtncart = document.querySelectorAll('.addcart')
             Array.from(addbtncart).forEach((item) => {
@@ -91,6 +93,7 @@ let getproducts = () => {
                     cart = [...cart, json.find((one) => {
                         return one.id === +item.dataset.id
                     })]
+                    countcart.textContent = cart.length
                     cartfunc()
                 })
             })
