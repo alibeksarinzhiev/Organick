@@ -1,0 +1,19 @@
+.banner__service_single{
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./image/Background.jpg")center/cover no-repeat;
+}
+.banner__service_single h1{
+    color: #274C5B;
+    font-family: Roboto,sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+}
+.content__image img{
+    margin: 120px 0 60px 0;
+    width: 1200px;
+    height: 700px;
+    flex-shrink: 0;
+}

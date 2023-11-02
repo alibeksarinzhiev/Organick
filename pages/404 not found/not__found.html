@@ -5,10 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./not__found.css">
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="shop.css">
-    <title>Shop</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Yellowtail&display=swap"
+          rel="stylesheet">
+    <title>404 Not Found</title>
 </head>
 <body>
 <header class="header">
@@ -23,9 +26,9 @@
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../about/about.html">About</a></li>
                     <li>Pages</li>
-                    <li>Shop</li>
+                    <li><a href="../shop/shop.html">Shop</a></li>
                     <li>Projects</li>
-                    <li>News</li>
+                    <li>Search</li>
                 </ul>
             </div>
             <div class="header__auth">
@@ -39,41 +42,22 @@
     </div>
 </header>
 <main>
-    <section class="banner_shop">
-        <h2>Shop</h2>
-    </section>
-
-    <section class="products__shop">
+    <section class="not__found">
         <div class="container">
-            <ul class="shop__category">
-                <li>All</li>
-                <li>Fresh</li>
-                <li>Vegetable</li>
-                <li>Nuts</li>
-                <li>Health</li>
-                <li>Millets</li>
-            </ul>
-            <div class="products__shop__card">
-
-            </div>
-        </div>
-    </section>
-
-    <section class="newsslatteer">
-        <div class="container">
-            <div class="newsslatteer__content">
-                <h2>Subscribe to
-                    our Newsletter
-                </h2>
-                <div class="newsslatteer__form">
-                    <input placeholder="Your Email Address" type="text">
-                    <button>Subscribe</button>
+            <div class="content__not_found">
+                <div class="text__not_found">
+                    <img src="image/404.png" alt="">
+                    <h1>Page not found</h1>
+                    <p>The page you are looking for doesn't exist or has been moved</p>
+                    <div class="button__not_found">
+                        <a href="../../index.html">
+                            <button>Go to Homepage <img src="./image/Aerrow.png" alt=""></button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 </main>
 <footer class="footer">
     <div class="container">
@@ -117,6 +101,5 @@
         </div>
     </div>
 </footer>
-<script src="shop.js"></script>
 </body>
 </html>

@@ -1,0 +1,112 @@
+.banner__services{
+    height: 430px;
+    background: url("image/banner__services.jpg")center/cover no-repeat;
+}
+.text__top__agriculture{
+    text-align: center;
+    margin-top: 200px;
+}
+.text__top__agriculture p{
+    margin-bottom: 6px;
+    color: #7EB693;
+    font-family: Yellowtail,sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+.text__top__agriculture h2{
+    color: #274C5B;
+    font-family: Roboto,sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+}
+.content__agriculture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left__agriculture,
+.right__agriculture{
+    width: 370px;
+}
+
+.left__agriculture{
+    text-align: end;
+}
+.left__card__agriculture,
+.right__card__agriculture{
+    margin-top: 33px;
+}
+.center__agriculture{
+    height: 890px;
+    background: url("./image/center__agriculture.png")center/cover no-repeat;
+    width: 464px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: -1px 0 0 -1px;
+}
+
+.content__agriculture h3{
+    margin: 5px 0 5px 0;
+    color: #274C5B;
+    font-family: Roboto,sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.content__agriculture p{
+    color: #525C60;
+    font-family: Open Sans,sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165.4%; /* 29.772px */
+}
+.center__agriculture button {
+    border-radius: 16px;
+    border: 2px solid #335B6B;
+    background: #FFF;
+    color: #274C5B;
+    font-family: Roboto,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 23px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: -25px;
+}
+
+.everyday__fresh{
+    display: flex;
+    justify-content: center;
+    height: 1100px;
+    background: url("./image/Background Image.png")center/cover no-repeat;
+    margin: 190px 0 0 0 ;
+}
+.content__everyday__fresh{
+    margin-top: 170px;
+    width: 650px;
+    text-align: center;
+}
+.only{
+    color: #7EB693;
+    font-family: Yellowtail,sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+.content__everyday__fresh h2{
+    color: #274C5B;
+    font-family: Roboto,sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+.center__text__fresh{
+    margin: 24px 0 50px 0;
+    color: #274C5B;
+    font-size: 18px;
+    font-weight: 400;
+}

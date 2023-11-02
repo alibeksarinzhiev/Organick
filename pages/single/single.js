@@ -1,3 +1,4 @@
+
 let card = document.querySelector('.one__product')
 
 fetch(`http://localhost:3000/products/${location.hash.slice(1)}`)
@@ -21,3 +22,6 @@ fetch(`http://localhost:3000/products/${location.hash.slice(1)}`)
                 </div>
     `
     })
+
+
+
