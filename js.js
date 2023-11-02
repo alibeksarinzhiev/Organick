@@ -1,39 +1,40 @@
 import {addCart} from "./pages/cart/cart.js";
-let cart = []
 
+let cart = []
 
 
 let cards = document.querySelector('.products__cards')
 let showBtn = document.querySelector('.products__btnbox button')
 let btncart = document.querySelector('.cart')
 let cartshow = document.querySelector('.cartshow')
-let closecart = document.querySelector('.cartshow h1')
+let closecart = document.querySelector('.image__exit img')
+let cartTov = document.querySelector('.cart__tov')
 
 let count = 8
-showBtn.addEventListener('click',()=>{
-if (count === 8){
-    count = 1000
-    showBtn.textContent='Скрыть'
-    getproducts()
-}else if (count ===1000){
-    count=8
-    getproducts()
-}
+showBtn.addEventListener('click', () => {
+    if (count === 8) {
+        count = 1000
+        showBtn.textContent = 'Скрыть'
+        getproducts()
+    } else if (count === 1000) {
+        count = 8
+        getproducts()
+    }
 
 })
 
-let getproducts = ()=>{
+let getproducts = () => {
     cards.innerHTML = ''
     fetch('http://localhost:3000/products')
-        .then((res)=>res.json())
-        .then((json)=>{
-            json.filter((el,idx)=>{
-                if (idx<count){
+        .then((res) => res.json())
+        .then((json) => {
+            json.filter((el, idx) => {
+                if (idx < count) {
                     return el
                 }
             })
-                .forEach((el)=>{
-                cards.innerHTML+=`
+                .forEach((el) => {
+                    cards.innerHTML += `
                 <div class="card">
             <button>${el.category}</button>
 <a href="pages/single/single.html#${el.id}">
@@ -48,13 +49,30 @@ let getproducts = ()=>{
             </div>
                 `
 
-            })
+                })
             let addbtncart = document.querySelectorAll('.addcart')
-            Array.from(addbtncart).forEach((item)=>{
-                item.addEventListener('click',()=>{
-                   cart = [...cart,json.find((one)=>{
-                       return one.id === +item.dataset.id
-                   })]
+            Array.from(addbtncart).forEach((item) => {
+                item.addEventListener('click', () => {
+                    cart = [...cart, json.find((one) => {
+                        return one.id === +item.dataset.id
+                    })]
+                    cartTov.innerHTML = ''
+
+                    cart.forEach((el) => {
+                        cartTov.innerHTML += `
+                           <div class="content__cart">
+                                <div class="bay__cart">
+                                    <img src="${el.image}" alt="Name product">
+                                    <h4>${el.category}</h4> 
+                                    <p>${el.price}.00 USD</p>
+                                </div>
+                                <div class="text__cart__products">
+                                    <h2>${el.title}</h2>
+                                    <h3>${el.description}</h3>
+                                </div>
+                           </div>
+                           `
+                    })
                     console.log(cart)
 
                 })
@@ -63,10 +81,10 @@ let getproducts = ()=>{
         })
 }
 getproducts()
-btncart.addEventListener('click',()=>{
-cartshow.classList.toggle('active')
+btncart.addEventListener('click', () => {
+    cartshow.classList.toggle('active')
 })
-closecart.addEventListener('click',()=>{
+closecart.addEventListener('click', () => {
     cartshow.classList.toggle('active')
 })
 
