@@ -31,8 +31,8 @@
 
 }
 .header__img img{
-    width: 1520px;
-    margin-top: 50px;
+ width: 1520px;
+margin-top: 50px;
 }
 .main__one {
     margin-top: 100px;
@@ -81,7 +81,7 @@
     height: 56px;
 }
 .right__card h4{
-    color: #274C5B;
+ color: #274C5B;
     font-size: 25px;
     width: 70%;
 }
@@ -195,7 +195,7 @@
     padding-bottom: 30px;
 }
 .newsslatteer {
-    background:url("image/Background (1).png") center / cover no-repeat ;
+    background:url("Background (1).png") center / cover no-repeat ;
     margin-top: 150px;
     padding: 100px 200px;
     color: white;
