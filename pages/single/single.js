@@ -6,7 +6,7 @@ fetch(`http://localhost:3000/products/${location.hash.slice(1)}`)
     .then((json)=>{
         card.innerHTML +=`
    <div class="box__img">
-                    <img src="${json.image}" alt="">
+                    <img src="../../${json.image}" alt="">
                 </div>
                 <div class="right__box">
                     <div class="right__top">
