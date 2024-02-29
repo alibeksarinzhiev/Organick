@@ -16,8 +16,8 @@ fetch(`http://localhost:3000/products/${location.hash.slice(1)}`)
                     </div>
                     <div class="right__bottom">
                         <h3>Quantity :</h3>
-                        <button class="1button">1</button>
-                        <button class="2button">Add To Cart</button>
+                        <button class="button__fir">1</button>
+                        <button class="button__sec">Add To Cart</button>
                     </div>
                 </div>
     `
